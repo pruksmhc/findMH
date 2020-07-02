@@ -18,6 +18,8 @@ from django.urls import path, include
 
 # For static files
 from django.conf import settings
+# For search engine
+from searches.views import search_view
 
 from .views import (
 	home_page,
@@ -43,6 +45,9 @@ urlpatterns = [
     # using /*-new/ cause '/create' could bring problems with slug
     path('blog-new/', blog_post_create_view),
     path('blog/', include('blog.urls')),
+
+    # Search engine view
+    path('search/', search_view),
 
 ]
 

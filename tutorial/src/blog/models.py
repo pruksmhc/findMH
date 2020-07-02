@@ -6,6 +6,9 @@ from django.conf import settings
 # Import for model manager
 from django.utils import timezone
 
+# Complex queries
+from django.db.models import Q
+
 User = settings.AUTH_USER_MODEL
 
 # Create your models here.
@@ -16,6 +19,13 @@ class BlogPostQuerySet(models.QuerySet):
 		# BlogPost.objects.all()
 		return self.filter(publish_date__lte = now)
 
+	def search(self,query):
+		lookup = (Q(title__icontains=query) | Q(content__icontains=query) )
+		lookup = (Q(title__icontains=query) | Q(content__icontains=query) | Q(user__last_name__icontains=query) ) 
+		# return self.filter(title__iexact=query)
+		# return self.filter(title__icontains=query)
+		return self.filter(lookup)
+
 class BlogPostManager(models.Manager):
 
 	def get_queryset(self):
@@ -23,6 +33,13 @@ class BlogPostManager(models.Manager):
 
 	def published(self):
 		return self.get_queryset().published()
+
+	def search(self, query= None):
+		if query is None:
+			return self.get_queryset().none()
+		else:
+			# return self.get_queryset().published().search(query)
+			return self.get_queryset().search(query)
 
 
 class BlogPost(models.Model): # blogpost_set -> would give me queryset ( See 'cfe' Associate BlogPost to a user with Foreign Key for more info...
