@@ -18,4 +18,12 @@ urlpatterns = [
     path('<str:slug>/delete/', blog_post_delete_view),
     # using /*-new/ cause '/create' could bring problems with slug
     #path('blog-new/', blog_post_create_view),
-]
+] 
+
+from django.conf import settings
+
+if settings.DEBUG:
+    # test mode
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

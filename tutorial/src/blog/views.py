@@ -5,6 +5,9 @@ from django.contrib.admin.views.decorators import staff_member_required
 # from django.http import Http404
 from django.shortcuts import render, get_object_or_404, redirect
 
+# Show only some entries
+# from django.utils import timezone
+
 # Create your views here.
 from .models import BlogPost
 
@@ -13,17 +16,6 @@ from .forms import BlogPostForm
 from .forms import BlogPostModelForm
 
 
-def blog_post_detail_page_id(request, post_id):
-	obj = get_object_or_404(BlogPost,id=post_id)
-	# try:
-	# 	obj = BlogPost.objects.get(id= post_id)
-	# except BlogPost.DoesNotExist:
-	# 	raise Http404
-	# except ValueError:
-	# 	raise Http404
-	template_name = 'blog_post_detail.html'
-	context = {"object": obj}
-	return render(request, template_name, context)
 
 
 # CRUD (Create Retrieve Update Delete)
@@ -36,9 +28,15 @@ def blog_post_detail_page_id(request, post_id):
 
 def blog_post_list_view(request):
 	# list our objects 
-	# could be search
-	qs = BlogPost.objects.all() # queryset -> list of python objecsts
-	# more advanced search
+
+	qs = BlogPost.objects.all().published() # queryset -> list of python 
+	# qs = BlogPost.objects.published() # either way works
+	if request.user.is_authenticated:
+		# To view all post I owned (created) + published ones
+		my_qs = BlogPost.objects.filter(user = request.user)
+		qs = (qs | my_qs).distinct()
+
+	# More advanced search
 	# qs = BlogPost.objects.filter(title__icontains='hello')
 	template_name = 'blog/list.html'
 	context = {'object_list': qs}
@@ -52,7 +50,8 @@ def blog_post_create_view(request):
 	# ? use a form
 	# request.user -> return something
 	# Approach I) Using ModelForms
-	form = BlogPostModelForm(request.POST or None)
+	print(request.FILES)
+	form = BlogPostModelForm(request.POST or None, request.FILES or None)
 	if form.is_valid():
 		obj = form.save(commit = False)
 		# Only include once we have added user to our model!!! 
@@ -114,6 +113,18 @@ def blog_post_delete_view(request, slug):
 
 
 # Deleted material
+
+def blog_post_detail_page_id(request, post_id):
+	obj = get_object_or_404(BlogPost,id=post_id)
+	# try:
+	# 	obj = BlogPost.objects.get(id= post_id)
+	# except BlogPost.DoesNotExist:
+	# 	raise Http404
+	# except ValueError:
+	# 	raise Http404
+	template_name = 'blog_post_detail.html'
+	context = {"object": obj}
+	return render(request, template_name, context)
 
 # def blog_post_detail_page(request, slug):
 # 	# queryset = BlogPost.objects.filter(slug=slug)
