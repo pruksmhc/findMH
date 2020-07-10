@@ -1,0 +1,334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"BA",
+				"BASE_DIR"
+			],
+			[
+				"BlogP",
+				"BlogPostQuerySet"
+			],
+			[
+				"log",
+				"login_required"
+			],
+			[
+				"Conta",
+				"ContactForm"
+			],
+			[
+				"blog",
+				"blog_post_detail_page"
+			],
+			[
+				"ob",
+				"objects"
+			],
+			[
+				"ren",
+				"rendered_item"
+			],
+			[
+				"pro",
+				"product_detail_view_old"
+			],
+			[
+				"contac",
+				"contact_view"
+			],
+			[
+				"hom",
+				"home_view"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"produc",
+				"product_detail_view"
+			],
+			[
+				"about",
+				"about_view"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/linkTH/settings.py",
+			"settings":
+			{
+				"buffer_size": 3088,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/laureanonisenbaum/dev/linkTH",
+		"/Users/laureanonisenbaum/dev/linkTH/src",
+		"/Users/laureanonisenbaum/dev/linkTH/src/linkTH"
+	],
+	"file_history":
+	[
+		"/Users/laureanonisenbaum/dev/findTH/src/searches/templates/searches/view.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/searches/views.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/searches/models.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/navbar.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/templates/blog/list-inline.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/findTH/urls.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/findTH/settings.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/models.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/urls.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/views.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/form.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/searches/admin.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/base.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/templates/blog/form.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/forms.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/staticfiles/blank.txt",
+		"/Users/laureanonisenbaum/dev/findTH/static_cdn_test/blank/blank.txt",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/templates/blog/detail.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/home.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/templates/blog/list.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/findTH/views.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/admin.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/templates/blog/delete.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/blog/templates/blog/create.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/findTH/forms.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/blog_post_delete.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/blog_post_update.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/blog_post_create.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/blog_post_list.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/blog_post_detail.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/therapists/models.py",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/about.html",
+		"/Users/laureanonisenbaum/dev/findTH/src/templates/hello_world.html",
+		"/Users/laureanonisenbaum/Desktop/etermax-challenge/ejercicio_1.sql",
+		"/Users/laureanonisenbaum/Desktop/Final/Final.md",
+		"/Users/laureanonisenbaum/Desktop/Courses/DS-GA 2433 - Database Systems/Homeworks/Homework07/script.sql",
+		"/Users/laureanonisenbaum/Desktop/2433 Final/Final_Format/Template.md",
+		"/Users/laureanonisenbaum/Desktop/2433 Final/Final_Format/Template.html",
+		"/Users/laureanonisenbaum/Desktop/Courses/DS-GA 2433 - Database Systems/Homeworks/Homework06/script.sql",
+		"/Users/laureanonisenbaum/dev/clearboard/src/.gitignore",
+		"/Users/laureanonisenbaum/dev/clearboard/.gitignore",
+		"/Users/laureanonisenbaum/dev/clearboard/src/clearboard/settings-old.py",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorflag/templates/vendorflag/vendorflag_create.html",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/templates/vendorupdate/vendorupdate_create.html",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/models.py",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/templates/vendorupdate/vendorupdate_list.html",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/templates/vendorupdate/vendorupdate_upload.html",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/templates/vendorupdate/vendorupdate_detail.html",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/forms.py",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorupdate/urls.py",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorflag/urls.py",
+		"/Users/laureanonisenbaum/dev/clearboard/src/vendorflag/views.py",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/templates/products/product_list.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/templates/products/product_delete.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/templates/products/product_detail_dynamic.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/templates/products/product_detail.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/forms.py",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/templates/products/product_create_raw.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/templates/products/product_create.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/product/detail.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/products/product_detail.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/products/product_detail.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/pages/views.py",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/trydjango/settings.py",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/trydjango/urls.py",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/contact.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/navbar.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/base.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/about.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/templates/home.html",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/admin.py",
+		"/Users/laureanonisenbaum/dev/djangotutor/src/products/models.py",
+		"/Users/laureanonisenbaum/dev/course/trydjango/src/trydjango/settings.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/linkTH/settings.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "linkTH.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

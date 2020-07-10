@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class='row'>
+
+	{% include 'therapist/list-inline.html' with therapist=object detail=True %}
+
+
+	{% if request.user.is_authenticated %}
+		{% if request.user.is_staff %}
+		<div class='col12'>
+
+		<button class="btn btn-outline-success"><a href='{{ object.get_update_url }}'>Update</a></button>
+		<button class="btn btn-outline-danger"><a href='{{ object.get_delete_url}}'>Delete</a></button>
+			
+		</div>
+		{% endif %}
+	{% endif %}
+
+</div>	
+
+{% endblock %}

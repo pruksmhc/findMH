@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block head_title %}Home{% endblock %}
+
+
+{% block content %}
+
+ <div class="container-fluid text-center">
+	<h1>{{ title }}</h1>
+
+
+<form>
+
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">City</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="New York" required>
+    </div>
+
+<!--     <div class="col-md-3 mb-3">
+      <label for="validationDefault02">State</label>
+      <select class="custom-select" id="validationDefault04" placeholder="NY" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+    </div> -->
+
+        <div class="col-md-3 mb-3">
+      <label for="validationDefault02">State</label>
+      <input type="text" class="form-control" id="validationDefault04" placeholder="NY" required>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault03">Zip</label>
+      <input type="text" class="form-control" id="validationDefault05" placeholder="10029" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-8 mb-3">
+      <label for="validationDefault04">Condition</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="i.e. Anxiety, Depression" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault05">Modality</label>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="i.e. Individual, Group" required>
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault06">Ethnicity</label>
+      <input type="text" class="form-control" id="validationDefault06" placeholder="i.e asian, african-american, latino" required>
+    </div>
+
+        <div class="col-md-3 mb-3">
+      <label for="validationDefault07">Language</label>
+      <input type="text" class="form-control" id="validationDefault07" placeholder="i.e. english, spanish" required>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault08">Sexuality</label>
+      <input type="text" class="form-control" id="validationDefault08" placeholder="i.e. homosexual, bisexual, heterosexual" required>
+    </div>
+  </div>
+
+<!--   <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div> -->
+
+  <button class="btn btn-primary btn-lg btn-block" type="submit">Search</button>
+</form>
+
+
+<img src="/media/image/Diverse-team.jpg" >
+
+
+
+</div>
+
+{% endblock %}

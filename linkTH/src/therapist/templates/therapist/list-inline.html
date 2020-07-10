@@ -1,0 +1,47 @@
+<!-- <li><a href='{{object.get_absolute_url}}'>{{ object.name }}</li> -->
+
+<div class='col col-md-12 mb-3 mx-auto'>
+
+<div class='card {% if not therapist.publish_date %} bg-dark text-light {% endif %}' >
+<!-- <div class='card {% if not blog_post.publish_date %} border border-warning text-dark {% endif %}' >
+<div class='card {% if not blog_post.publish_date %} bg-warning text-dark {% endif %}' > -->
+	<div class='card-body'>
+
+		<h5 class='card-title'>{{ therapist.name}}</h5>
+
+		{% if therapist.image %}
+			<a href="{{ therapist.get_absolute_url }}">
+				<div style="max-height:100px; max-width:100px; overflow: hidden">
+					<img src="{{ therapist.image.url }}" class='card-img-top' />
+				</div>
+			</a>
+		{% endif %}
+
+		<p class='card-text'>
+			<small class='text-muted'>
+
+			<p>{{ therapist.city }} , {{ therapist.state }}</p>
+			<p>{{ therapist.zipcode }}</p>
+
+
+			{% if truncate %}
+				{{ therapist.condition|linebreaks|truncatewords:30}}</small>
+			
+			{% else %}
+				{{ therapist.condition|linebreaks}}
+
+			{% endif %}
+
+		</p>
+		{% if not detail %}
+			{% if not therapist.publish_date %} Draft {% endif %}
+			<button type="button" class="btn btn-outline-primary"><a href='{{ therapist.get_absolute_url }}'>View</a></button>
+			
+			
+		{% endif %}
+	</div>
+
+
+
+</div>
+</div>
