@@ -14,8 +14,8 @@ class TherapistQuerySet(models.QuerySet):
 		return self.filter(publish_date__lte = now)
 
 	def search(self,query):
-		lookup = (Q(name__icontains=query) | Q(condition__icontains=query) | Q(ethnicity__icontains=query)
-			| Q(city__icontains=query) | Q(state__icontains=query) | Q(zipcode__icontains=query)) 
+		lookup = (Q(name__icontains=query.split("_")[0]) | Q(condition__icontains=query.split("_")[1]) | Q(ethnicity__icontains=query.split("_")[2])
+			| Q(city__icontains=query.split("_")[3]) | Q(state__icontains=query.split("_")[4]) | Q(zipcode__icontains=query.split("_")[5]) )
 		# return self.filter(name__iexact=query)
 		# return self.filter(name__icontains=query)
 		return self.filter(lookup)

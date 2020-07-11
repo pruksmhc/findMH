@@ -7,7 +7,14 @@ from therapist.models import Therapist
 
 # Create your views here.
 def search_view(request):
-	query = request.GET.get('q', None)
+	city = request.GET.get('city', None)
+	zipc = request.GET.get("zip", None)
+	condition = request.GET.get("condition", None)
+	modality = request.GET.get("modality", None)
+	ethnicity = request.GET.get("ethnicity", None)
+	lang = request.GET.get("language", None)
+	sexuality = request.GET.get("sexuality", None)
+	query = "_".join([city, zipc, condition, modality, ethnicity, lang, sexuality])
 	user = None
 	if request.user.is_authenticated:
 		user = request.user
