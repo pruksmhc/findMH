@@ -9,12 +9,12 @@
 	<h1>{{ title }}</h1>
 
 
-<form action='/search/'>
+<form>
 
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationDefault01">Location</label>
-      <input type="text" class="form-control" id="validationDefault03" name="city" placeholder="Virtual" required>
+      <label for="validationDefault01">City</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="New York" required>
     </div>
 
 <!--     <div class="col-md-3 mb-3">
@@ -25,37 +25,42 @@
       </select>
     </div> -->
 
+        <div class="col-md-3 mb-3">
+      <label for="validationDefault02">State</label>
+      <input type="text" class="form-control" id="validationDefault04" placeholder="NY" required>
+    </div>
+
     <div class="col-md-3 mb-3">
       <label for="validationDefault03">Zip</label>
-      <input type="text" class="form-control" name="zip" id="validationDefault05" placeholder="10029" >
+      <input type="text" class="form-control" id="validationDefault05" placeholder="10029" required>
     </div>
   </div>
 
   <div class="form-row">
     <div class="col-md-8 mb-3">
       <label for="validationDefault04">Condition</label>
-      <input type="text" class="form-control" name="condition" id="validationDefault01" placeholder="i.e. Anxiety, Depression" >
+      <input type="text" class="form-control" id="validationDefault01" placeholder="i.e. Anxiety, Depression" required>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationDefault05">Modality</label>
-      <input type="text" class="form-control" name="modality" id="validationDefault02" placeholder="i.e. Individual, Group" required>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="i.e. Individual, Group" required>
     </div>
   </div>
 
     <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationDefault06">Ethnicity</label>
-      <input type="text" class="form-control" name="ethnicity" id="validationDefault06" placeholder="i.e asian, african-american, latino" required>
+      <input type="text" class="form-control" id="validationDefault06" placeholder="i.e asian, african-american, latino" required>
     </div>
 
         <div class="col-md-3 mb-3">
       <label for="validationDefault07">Language</label>
-      <input type="text" class="form-control" name="language" id="validationDefault07" placeholder="i.e. english, spanish" required>
+      <input type="text" class="form-control" id="validationDefault07" placeholder="i.e. english, spanish" required>
     </div>
 
     <div class="col-md-3 mb-3">
       <label for="validationDefault08">Sexuality</label>
-      <input type="text" class="form-control" name="sexuality" id="validationDefault08" placeholder="i.e. homosexual, bisexual, heterosexual" >
+      <input type="text" class="form-control" id="validationDefault08" placeholder="i.e. homosexual, bisexual, heterosexual" required>
     </div>
   </div>
 
@@ -68,7 +73,7 @@
     </div>
   </div> -->
 
-  <button class="btn btn-primary btn-lg btn-block" type="submit", >Search</button>
+  <button class="btn btn-primary btn-lg btn-block" type="submit">Search</button>
 </form>
 
 

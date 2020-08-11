@@ -81,6 +81,8 @@ def therapist_delete_view(request, th_id):
 	context = {"object": obj}
 	return render(request, template_name, context)
 
+
+
 ####################################################
 # Deprecated Views
 
