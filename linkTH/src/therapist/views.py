@@ -1,4 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
+import csv, io
+from django.contrib import messages
+from django.utils import timezone
+
 
 # Show only some entries
 # from django.utils import timezone
@@ -80,6 +84,23 @@ def therapist_delete_view(request, th_id):
 		return redirect("/therapist")
 	context = {"object": obj}
 	return render(request, template_name, context)
+
+@staff_member_required
+def therapist_upload_view(request):
+	
+	template = "therapist/upload.html"
+	if request.method == 'GET':
+		return render(request, template)
+	csv_file = request.FILES['file']
+	if not csv_file.name.endswith('.csv'):
+		messages.error(request, 'Please upload a .csv file.')
+	data_set = csv_file.read().decode('UTF-8')
+	io_string = io.StringIO(data_set)
+	next(io_string)
+	for column in csv.reader(io_string, delimiter=','): _, created = Therapist.objects.update_or_create(city=column[0], state =column[1], zipcode=column[2], phone=column[3], name=column[4], condition=column[5], ethnicity=column[6], language=column[7], sexuality=column[8], therapy_type=column[9], modality=column[10], publish_date = timezone.now())
+	context = {}
+	#publish_date = Therapist.objects.update_or_create(timezone.now())
+	return render(request, template, context)
 
 
 

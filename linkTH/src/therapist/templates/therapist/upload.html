@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <div>
+<!--                | means OR operator-->
+                <strong>{{message|safe}}</strong>
+            </div>
+        {% endfor %}
+    {% else %}
+    {{order}}
+<form method="POST" enctype="multipart/form-data">{% csrf_token %}
+<div class="file-field input-field">
+<div class="btn">
+<span>Upload a CSV FILE</span>
+<input type="file" name="file">
+</div>
+<div class="file-path-wrapper">
+ <input class="file-path validate" type="text">
+</div>
+<button class="waves-effect waves-light btn teal" type="submit">Upload</button>
+</div>
+</form>
+    {% endif %}
+    {% for profile in profiles %}
+    {{profile.name}}
+    {% endfor %}
+</body>
+</html>
+
